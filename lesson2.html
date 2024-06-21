@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <p>Ich bin hier</p>
+    </div>
+    <form>
+        <p>
+            <label>Username: </label>
+            <input type="text" id="username">
+        </p>
+        <p>
+            <label>Password: </label>
+            <input type="text" id="password">
+        </p>
+        <p>
+            <label>Email: </label>
+            <input type="text" id="email" value="example@gmail.com" disabled>
+        </p>
+        <p>
+            <label>Message: </label>
+            <textarea id="message"></textarea>
+        </p>
+        <p>
+
+            <input type="checkbox" id="agree"> OKAY
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_0">
+                Man</label>
+            <br>
+            <label>
+                <input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_1">
+                Woman</label>
+
+            <br>
+        </p>
+        <p><input type="file"></p>
+        <p><input type="reset" value="clear"></p>
+        <p><input type="submit" value="send"></p>
+
+
+    </form>
+    <ul>
+        <li><a href="#">Google</a></li>
+        <li><a href="#">Yahoo</a></li>
+        <li><a href="#">Yandex</a></li>
+        <li><a href="#">Bing</a></li>
+
+    </ul>
+    <button type="button">Click Me</button>
+    <script>
+        $(function () {
+            $("button").click(function () {
+
+                $(":checked").css("background-color", "red").css("width","50px").css("height","200px");
+            });
+        });
+    </script>
+</body>
+
+</html>
